@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohammed Ebrahim">
+    <meta name="description" content="Portfolio Website">
+    <title>Mohammed Ebrahim | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">Mohammed Ebrahim</a>
+            <ul class="navbar-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a passionate iOS Developer</p>
+            <a href="#contact" class="btn-main">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I'm a iOS developer with a strong focus on creating beautiful, responsive, and user-friendly Apps. I specialize in iOS technologies like Swift, SwiftUI, UIKit and Objective-C
+             and I'm always eager to learn new skills and improve my craft.</p>
+    </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="SwiftUI Recipes iOS App Template/590X300.png" alt="SwiftUI Recipes iOS App Template">
+                <h3>SwiftUI Recipes iOS App Template</h3>
+                <p>The recipe app is an excellent solution for those who want to create a recipe app for various diets and cuisines.</p>
+                <a href="https://youtube.com/shorts/bFKh0kXLGUs" target="_blank">Watch the Project Video</a>
+            </div>
+            <div class="project-card">
+                <img src="SwiftUI ToDo List iOS App/590X300.png" alt="SwiftUI ToDo List iOS App">
+                <h3>SwiftUI ToDo List iOS App</h3>
+                <p>ToDo List iOS App is a simple app designed to help you organize your tasks. You can move, delete, and mark specific tasks as complete.</p>
+                <a href="#" target="_blank">Watch the Project Video</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Swift</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>SwiftUI</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>UIKit</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Objective-C</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or want to work together, feel free to reach out!</p>
+        
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-main">Send Message</button>
+        </form>
+        
+        <!-- Success Message -->
+        <div id="success-message" class="success-message" style="display: none;">
+            <p>Your message has been sent successfully! I'll get back to you as soon as possible.</p>
+        </div>
+        
+        <!-- Error Message -->
+        <div id="error-message" class="error-message" style="display: none;">
+            <p>There was an error sending your message. Please try again later.</p>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mohammed Ebrahim G. Habiya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
