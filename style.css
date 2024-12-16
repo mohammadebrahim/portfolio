@@ -48,7 +48,7 @@ body {
 /* Logo Styling */
 .logo {
     font-size: 2.5rem;
-    font-family: 'Roboto', sans-serif; /* You can replace with a custom font */
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
@@ -203,14 +203,107 @@ footer {
 }
 
 /* Media Queries */
+
+/* Mobile Devices (<= 768px) */
 @media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    /* Hero Section */
+    header {
+        padding: 60px 20px;
+    }
+
+    header .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    header .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    /* Skills Section */
     .skills-container {
         grid-template-columns: 1fr;
     }
 
+    /* Projects Section */
     .projects-container {
         flex-direction: column;
         align-items: center;
     }
+
+    .project-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Contact Form */
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    input, textarea {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
 }
 
+/* Extra Small Devices (<= 480px) */
+@media (max-width: 480px) {
+
+    /* Navbar */
+    .navbar-links {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    /* Hero Section */
+    header {
+        padding: 40px 20px;
+    }
+
+    header .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    header .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Projects Section */
+    .project-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Contact Form */
+    input, textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}

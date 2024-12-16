@@ -58,3 +58,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     xhr.send(data);
 });
 
+// Toggle Navbar Links on Mobile
+const menuToggle = document.querySelector('.menu-toggle');
+const navbarLinks = document.querySelector('.navbar-links');
+
+menuToggle.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+});
