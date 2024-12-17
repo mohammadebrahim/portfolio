@@ -241,16 +241,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* Projects Section */
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-card {
-        width: 90%;
-        margin-bottom: 20px;
-    }
 
     /* Contact Form */
     form {
